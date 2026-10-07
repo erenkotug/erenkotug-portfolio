@@ -2,7 +2,7 @@
 window.PORTFOLIO = {
   name: "Eren Kötüğ",
   intro: "Dokuz Eylül Üniversitesi Bilgisayar Mühendisliği mezunuyum. Önümüzdeki dönemde Java ile backend projeleri geliştirmeye; temiz kod, veritabanı tasarımı ve sürdürülebilir servisler konusunda deneyim kazanmaya odaklanıyorum.",
-  about: "Dokuz Eylül Üniversitesi Bilgisayar Mühendisliği mezunuyum. Java ile uygulama geliştirme alanında kendimi ilerletmeye ve backend temellerimi güçlendirmeye odaklanıyorum. Eğitimim ve stajlarımda .NET Core MVC, Razor, veri tabanları ve Cisco ağ altyapılarıyla çalışma fırsatı buldum. Bilgisayarlı görü ve makine öğrenmesi projelerimle farklı teknolojilerde deneyim kazandım.",
+  about: "Dokuz Eylül Üniversitesi Bilgisayar Mühendisliği mezunuyum. Yazılım geliştirme alanında Java ile ilerlemeyi; backend servisleri ve web uygulamaları geliştirerek bu alandaki yetkinliğimi derinleştirmeyi hedefliyorum. Yazılım stajımda .NET Core MVC ve Razor ile kurumsal uygulamalar üzerinde çalıştım; ağ stajımda Cisco altyapıları, VLAN, DHCP, routing ve sanallaştırma süreçlerini deneyimledim. Bitirme projemde ve makine öğrenmesi çalışmalarımda bilgisayarlı görü çözümleri geliştirdim.",
   email: "erenkt11@gmail.com",
   location: "Bursa / İzmir, Türkiye",
   github: "https://github.com/erenkotug",
@@ -18,8 +18,8 @@ window.PORTFOLIO = {
     { title: "Araçlar", items: ["Git", "GitHub", "Docker", "Visual Studio", "CVAT", "Roboflow"] }
   ],
   experience: [
-    { company: "Akpınar Bilişim Hizmetleri", role: "Network & IT Stajyeri", date: "Haziran 2025 — Ağustos 2025", description: "Kurumsal Cisco ağlarında VLAN yapılandırmaları ve DHCP ile IP adresi dağıtım süreçlerinde çalıştım. Routing yapılandırmaları, sanallaştırma sistemleri ve sunucu odası operasyonlarına destek vererek ağ altyapısının günlük işleyişini yakından tanıdım." },
-    { company: "İletişim Yazılım A.Ş.", role: "Yazılım Geliştirme Stajyeri", date: "Haziran 2024 — Eylül 2024", description: ".NET Core MVC ve Razor ile kurumsal web uygulamalarının geliştirilmesine katkı sağladım. Sayfa akışları, backend bileşenleri ve veri erişim süreçleri üzerinde çalıştım; ekip içi görev takibi ve çevik çalışma düzeni konusunda deneyim kazandım." }
+    { company: "Akpınar Bilişim Hizmetleri", role: "Network & IT Stajyeri", date: "Haziran 2025 — Ağustos 2025", description: "Cisco teknolojileriyle VLAN, routing ve DHCP servislerini içeren kurumsal ağ altyapılarının tasarım ve yapılandırma süreçlerinde görev aldım. Sanallaştırma ortamları ile ağ cihazlarının kurulum ve yönetimine destek oldum. Sunucu odası operasyonları, kablolama düzeni, UPS entegrasyonu ve altyapı izleme çalışmalarında deneyim kazandım." },
+    { company: "İletişim Yazılım A.Ş.", role: "Yazılım Geliştirme Stajyeri", date: "Haziran 2024 — Eylül 2024", description: ".NET Core MVC ve Razor kullanarak web uygulamaları geliştirdim; kullanıcı deneyimi ve sistem yanıt hızını iyileştirmeye yönelik çalışmalara katkı sundum. Veritabanı tabanlı işlevleri uygulamalara entegre edip veri erişim süreçlerini optimize ettim. Gerçek yazılım projelerinde backend geliştirme ve çevik iş akışları deneyimi kazandım." }
   ],
   education: "Dokuz Eylül Üniversitesi · Bilgisayar Mühendisliği",
   projects: [
@@ -54,9 +54,9 @@ window.PORTFOLIO_LOCALES = {
     static: {
       homeLabel: "Eren Kötüğ ana sayfa", menuOpen: "Menüyü aç", menuClose: "Menüyü kapat", navLabel: "Ana menü",
       navWork: "Projeler", navAbout: "Hakkımda", navExperience: "Deneyim", navContact: "İletişim",
-      heroEyebrow: "MERHABA, BEN EREN KÖTÜĞ", heroTitle: "Java ile backend<br /><span class=\"headline-indent\">ve <em>web geliştirme.</em></span>",
+      heroEyebrow: "MERHABA, BEN EREN KÖTÜĞ", heroTitle: "Bilgisayar Mühendisi<br /><span class=\"headline-indent\">ve <em>Yazılım Geliştirici.</em></span>",
       heroArt: "Backend, yapay zekâ ve web arayüzünü temsil eden katmanlı grafik", workCta: "Projelerimi incele", contactCta: "İletişime geç",
-      resumeTr: "Türkçe CV indir (PDF)", resumeEn: "İngilizce CV indir (PDF)", languageLabel: "Site dili",
+      resumeTr: "Türkçe CV", resumeEn: "İngilizce CV", languageLabel: "Site dili",
       artAi: "YAPAY ZEKÂ", artSystems: "SİSTEMLER", artWeb: "WEB GELİŞTİRME", artLabel: "ÇALIŞMA<br />ALANLARIM",
       heroProjects: "PROJELERİ GÖR", heroLocation: "BURSA / İZMİR",
       workEyebrow: "PROJELER", workTitle: "Seçili <em>çalışmalar.</em>", workNote: "Üzerinde çalıştığım projeler ve<br />kullandığım teknolojiler.",
@@ -74,7 +74,7 @@ window.PORTFOLIO_LOCALES = {
   },
   en: {
     intro: "A Dokuz Eylül University Computer Engineering graduate, I am focusing on building backend projects with Java and strengthening my foundations in clean code, database design, and maintainable services.",
-    about: "I graduated in Computer Engineering from Dokuz Eylül University. I am developing my skills in Java application development and building a stronger foundation in backend engineering. During my studies and internships, I worked with .NET Core MVC, Razor, databases, and Cisco network infrastructure. My computer vision and machine learning projects have also given me experience across different technologies.",
+    about: "I graduated in Computer Engineering from Dokuz Eylül University. I plan to build on my software development experience with Java, focusing on backend services and web applications. During my software internship, I worked with .NET Core MVC and Razor; my network internship introduced me to Cisco infrastructure, VLAN, DHCP, routing, and virtualization. My graduation and machine learning projects also involved computer vision solutions.",
     location: "Bursa / İzmir, Türkiye",
     education: "Dokuz Eylül University · Computer Engineering",
     skills: [
@@ -86,8 +86,8 @@ window.PORTFOLIO_LOCALES = {
       { title: "Tools", items: ["Git", "GitHub", "Docker", "Visual Studio", "CVAT", "Roboflow"] }
     ],
     experience: [
-      { company: "Akpınar Bilişim Hizmetleri", role: "Network & IT Intern", date: "June 2025 — August 2025", description: "Worked with VLAN configuration and DHCP address allocation across corporate Cisco networks. Supported routing configuration, virtualization systems, and server room operations, gaining practical insight into day-to-day network infrastructure." },
-      { company: "İletişim Yazılım A.Ş.", role: "Software Development Intern", date: "June 2024 — September 2024", description: "Contributed to corporate web applications built with .NET Core MVC and Razor. Worked on page flows, backend components, and data access, while gaining experience with team task tracking and an Agile workflow." }
+      { company: "Akpınar Bilişim Hizmetleri", role: "Network & IT Intern", date: "June 2025 — August 2025", description: "Designed and configured corporate network infrastructure using Cisco technologies, including VLANs, routing, and DHCP services. Helped deploy and manage virtualization environments and network devices. Supported server room operations, cabling, UPS integration, and infrastructure monitoring." },
+      { company: "İletişim Yazılım A.Ş.", role: "Software Development Intern", date: "June 2024 — September 2024", description: "Developed web applications with .NET Core MVC and Razor, contributing to improvements in user experience and system responsiveness. Integrated database-driven features and optimized data access. Gained hands-on experience in backend development and Agile workflows through real software projects." }
     ],
     projects: {
       volleyball: { name: "Volleyball Performance Analysis", category: "GRADUATION PROJECT · COMPUTER VISION", summary: "A web-based analysis platform that processes player and ball movement from match footage to surface performance insights.", description: "A graduation project combining video analysis, computer vision, and web development. The system brings video processing, detection results, and analysis outputs together in an end-to-end workflow.", points: ["Detects players and the ball with YOLO, pose estimation, and object tracking.", "Enriches match footage with court filtering and team classification.", "Presents analysis results and statistics through a FastAPI backend and React interface.", "Uses a CVAT-based workflow for model and data annotation."] },
@@ -104,7 +104,7 @@ window.PORTFOLIO_LOCALES = {
     static: {
       homeLabel: "Eren Kötüğ home", menuOpen: "Open menu", menuClose: "Close menu", navLabel: "Main navigation",
       navWork: "Projects", navAbout: "About", navExperience: "Experience", navContact: "Contact",
-      heroEyebrow: "HELLO, I'M EREN KÖTÜĞ", heroTitle: "Java backend<br /><span class=\"headline-indent\">and <em>web development.</em></span>",
+      heroEyebrow: "HELLO, I'M EREN KÖTÜĞ", heroTitle: "Computer Engineer<br /><span class=\"headline-indent\">& <em>Software Developer.</em></span>",
       heroArt: "Layered graphic representing backend, AI, and web interfaces", workCta: "View projects", contactCta: "Get in touch",
       resumeTr: "Download Turkish CV (PDF)", resumeEn: "Download English CV (PDF)", languageLabel: "Site language",
       artAi: "ARTIFICIAL INTELLIGENCE", artSystems: "SYSTEMS", artWeb: "WEB DEVELOPMENT", artLabel: "AREAS<br />OF FOCUS",
