@@ -43,7 +43,7 @@ function renderProjectPage(nextLanguage) {
   document.querySelector('[data-case-heading]').innerHTML = caseCopy.approachTitle;
   document.querySelector('[data-case-note]').textContent = caseCopy.note;
   document.querySelector('[data-case-project-name]').textContent = project.name.toLocaleUpperCase(language === 'tr' ? 'tr-TR' : 'en-US');
-  document.querySelector('[data-flow]').innerHTML = caseCopy.flow.map((label, index) => `${index ? '<b>→</b>' : ''}<span>${label}</span>`).join('');
+  document.querySelector('[data-flow]').innerHTML = caseCopy.flow.map((label, index) => `${index ? '<b>→︎</b>' : ''}<span>${label}</span>`).join('');
   document.querySelector('[data-stat]').textContent = project.stack.slice(0, 3).join('　/　');
 }
 
