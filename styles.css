@@ -138,5 +138,4 @@ body{font-family:var(--sans);font-size:var(--type-body);font-weight:400;line-hei
   .topbar .language-toggle{margin-left:0}
 }
 .button-outline{border:0}
-.button-arrow{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:currentColor}
-.button-arrow svg{display:block;width:16px;height:16px;overflow:visible;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.button-arrow{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:currentColor;font-family:Arial,sans-serif;font-size:17px;line-height:1;font-variant-emoji:text}
