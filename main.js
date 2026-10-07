@@ -1,4 +1,6 @@
 const portfolio = window.PORTFOLIO;
+const siteBase = window.location.hostname.endsWith('.github.io') ? '/erenkotug-portfolio' : '';
+const projectPath = (id) => `${siteBase}/projects/${id}/`;
 const githubIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.3-1.24-1.64-1.24-1.64-1.01-.69.08-.68.08-.68 1.12.08 1.7 1.15 1.7 1.15 1 .1 1.5 2.2 3.67 1.57.1-.72.4-1.21.7-1.49-2.48-.28-5.08-1.24-5.08-5.54 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.08 1.14a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.14 3.08-1.14.61 1.53.23 2.67.11 2.95.72.78 1.14 1.77 1.14 2.99 0 4.31-2.6 5.26-5.1 5.53.4.35.76 1.03.76 2.08v3.08c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg>`;
 const linkedinIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.03-1.85-3.03-1.85 0-2.13 1.45-2.13 2.94v5.66H9.35V8.98h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.45v6.31ZM5.34 7.42a2.06 2.06 0 1 1 .02-4.12 2.06 2.06 0 0 1-.02 4.12Zm1.78 13.03H3.56V8.98h3.56v11.47ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.44c.98 0 1.79-.77 1.79-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>`;
 const put = (selector, value) => document.querySelectorAll(selector).forEach((node) => { node.textContent = value; });
@@ -21,11 +23,11 @@ const previews = {
 
 document.querySelector('#project-grid').innerHTML = portfolio.projects.map((project) => `
   <article class="project-card project-${project.theme}">
-    <a class="project-visual" href="/projects/${project.id}/" aria-label="${project.name} proje detaylarını incele">${previews[project.visual]}<span class="project-open">↗</span></a>
-    <div class="project-info"><div><span class="project-category">${project.category}</span><h3>${project.name}<span class="project-number">${project.number}</span></h3></div><a class="project-visit" href="/projects/${project.id}/">PROJEYİ İNCELE ↗</a></div>
+    <a class="project-visual" href="${projectPath(project.id)}" aria-label="${project.name} proje detaylarını incele">${previews[project.visual]}<span class="project-open">↗</span></a>
+    <div class="project-info"><div><span class="project-category">${project.category}</span><h3>${project.name}<span class="project-number">${project.number}</span></h3></div><a class="project-visit" href="${projectPath(project.id)}">PROJEYİ İNCELE ↗</a></div>
     <p class="project-description">${project.summary}</p>
     <div class="project-tags">${project.stack.slice(0, 4).map((item) => `<span>${item}</span>`).join('')}</div>
-    <div class="project-links"><a href="/projects/${project.id}/">Detaylar <span>↗</span></a><a href="${project.github}" target="_blank" rel="noreferrer">${project.githubRepository ? 'GitHub deposu' : 'GitHub profilim'} <span>↗</span></a></div>
+    <div class="project-links"><a href="${projectPath(project.id)}">Detaylar <span>↗</span></a><a href="${project.github}" target="_blank" rel="noreferrer">${project.githubRepository ? 'GitHub deposu' : 'GitHub profilim'} <span>↗</span></a></div>
   </article>`).join('');
 
 document.querySelector('#experience-list').innerHTML = portfolio.experience.map((item, index) => `

@@ -7,8 +7,8 @@ window.PORTFOLIO = {
   location: "Bursa / İzmir, Türkiye",
   github: "https://github.com/erenkotug",
   linkedin: "https://www.linkedin.com/in/erenkotug/",
-  resumeTr: "/public/Eren-Kotug-CV-TR.pdf",
-  resumeEn: "/public/Eren-Kotug-CV-EN.pdf",
+  resumeTr: "public/Eren-Kotug-CV-TR.pdf",
+  resumeEn: "public/Eren-Kotug-CV-EN.pdf",
   skills: [
     { title: "Programlama dilleri", items: ["Java", "C#", "Python", "C++"] },
     { title: "Web & backend", items: [".NET Core MVC", "FastAPI", "React", "Razor"] },
