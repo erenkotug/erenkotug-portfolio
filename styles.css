@@ -139,3 +139,9 @@ body{font-family:var(--sans);font-size:var(--type-body);font-weight:400;line-hei
 }
 .button-outline{border:0}
 .button-arrow{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;color:currentColor;font-family:Arial,sans-serif;font-size:17px;line-height:1;font-variant-emoji:text}
+
+.arrow-mark{display:inline-block;position:relative;width:1em;height:1em;flex:0 0 1em;vertical-align:middle;color:currentColor}
+.arrow-mark::before{content:"";position:absolute;left:16%;top:50%;width:64%;border-top:1.5px solid currentColor;transform:rotate(-45deg);transform-origin:center}
+.arrow-mark::after{content:"";position:absolute;right:12%;top:12%;width:30%;height:30%;border-top:1.5px solid currentColor;border-right:1.5px solid currentColor}
+.arrow-right{transform:rotate(-45deg)}.arrow-down{transform:rotate(135deg)}.arrow-up{transform:rotate(-135deg)}.arrow-up-left{transform:rotate(-90deg)}.arrow-down-right{transform:rotate(90deg)}
+.button-arrow{font-size:17px;line-height:1}.project-open .arrow-mark{font-size:16px}.experience-arrow .arrow-mark{font-size:16px}.contact-arrow{font-size:20px}

@@ -9,7 +9,7 @@ const linkedinIcon = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="cu
 
 const localizedProject = (project, locale) => ({ ...project, ...(locale.projects?.[project.id] || {}) });
 const previewMarkup = (project, labels) => {
-  if (project.visual === 'court') return `<div class="preview-court"><span class="court-label">${labels.court[0]}</span><div class="court-lines"><i class="player p1">01</i><i class="player p2">02</i><i class="player p3">03</i><i class="player p4">04</i><i class="ball-path"></i><i class="ball-dot"></i></div><div class="court-stats"><span>${labels.court[1]} <b>●●●●</b></span><span>${labels.court[2]} <b>${labels.court[3]} ↗︎</b></span></div></div>`;
+  if (project.visual === 'court') return `<div class="preview-court"><span class="court-label">${labels.court[0]}</span><div class="court-lines"><i class="player p1">01</i><i class="player p2">02</i><i class="player p3">03</i><i class="player p4">04</i><i class="ball-path"></i><i class="ball-dot"></i></div><div class="court-stats"><span>${labels.court[1]} <b>●●●●</b></span><span>${labels.court[2]} <b>${labels.court[3]} <i class="arrow-mark" aria-hidden="true"></i></b></span></div></div>`;
   if (project.visual === 'network') return `<div class="preview-network"><span class="network-label">${labels.network[0]}</span><div class="network-nodes"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="network-bottom"><span>${labels.network[1]}</span><b>${labels.network[2]}</b></div></div>`;
   if (project.visual === 'store') return `<div class="preview-store"><div class="store-bar"><b>MARKET</b><span>${labels.store[0]}　${labels.store[1]}　${labels.store[2]}</span></div><div class="store-layout"><div class="store-item item-one"><i></i><span>${labels.store[3]} / 001</span></div><div class="store-item item-two"><i></i><span>${labels.store[3]} / 002</span></div><div class="store-item item-three"><i></i><span>${labels.store[3]} / 003</span></div></div></div>`;
   return `<div class="preview-circuit"><span class="circuit-label">${labels.circuit[0]}</span><div class="circuit-board"><i class="circuit-chip">ESP<br/>32</i><i class="sensor sensor-left"></i><i class="sensor sensor-right"></i><i class="circuit-line line-a"></i><i class="circuit-line line-b"></i><i class="circuit-node node-a"></i><i class="circuit-node node-b"></i></div><span class="circuit-bottom">${labels.circuit[1]} <b>● ${labels.circuit[2]}</b></span></div>`;
@@ -19,18 +19,18 @@ function renderProjects(locale, strings) {
   document.querySelector('#project-grid').innerHTML = portfolio.projects.map((baseProject) => {
     const project = localizedProject(baseProject, locale);
     return `<article class="project-card project-${project.theme}">
-      <a class="project-visual" href="${projectPath(project.id)}" aria-label="${project.name} ${strings.projectAlt}">${previewMarkup(project, locale.preview)}<span class="project-open">↗︎</span></a>
-      <div class="project-info"><div><span class="project-category">${project.category}</span><h3>${project.name}<span class="project-number">${project.number}</span></h3></div><a class="project-visit" href="${projectPath(project.id)}">${strings.projectView} ↗︎</a></div>
+      <a class="project-visual" href="${projectPath(project.id)}" aria-label="${project.name} ${strings.projectAlt}">${previewMarkup(project, locale.preview)}<span class="project-open"><i class="arrow-mark" aria-hidden="true"></i></span></a>
+      <div class="project-info"><div><span class="project-category">${project.category}</span><h3>${project.name}<span class="project-number">${project.number}</span></h3></div><a class="project-visit" href="${projectPath(project.id)}">${strings.projectView} <i class="arrow-mark" aria-hidden="true"></i></a></div>
       <p class="project-description">${project.summary}</p>
       <div class="project-tags">${project.stack.slice(0, 4).map((item) => `<span>${item}</span>`).join('')}</div>
-      <div class="project-links"><a href="${projectPath(project.id)}">${strings.projectDetails} <span>↗︎</span></a><a href="${project.github}" target="_blank" rel="noreferrer">${project.githubRepository ? strings.githubRepo : strings.githubProfile} <span>↗︎</span></a></div>
+      <div class="project-links"><a href="${projectPath(project.id)}">${strings.projectDetails} <i class="arrow-mark" aria-hidden="true"></i></a><a href="${project.github}" target="_blank" rel="noreferrer">${project.githubRepository ? strings.githubRepo : strings.githubProfile} <i class="arrow-mark" aria-hidden="true"></i></a></div>
     </article>`;
   }).join('');
 }
 
 function renderExperience(locale) {
   document.querySelector('#experience-list').innerHTML = locale.experience.map((item, index) => `
-    <article class="experience-item"><span class="experience-index">0${index + 1}</span><div class="experience-main"><p class="experience-date">${item.date}</p><h3>${item.company}</h3><h4>${item.role}</h4><p>${item.description}</p></div><span class="experience-arrow">↗︎</span></article>`).join('');
+    <article class="experience-item"><span class="experience-index">0${index + 1}</span><div class="experience-main"><p class="experience-date">${item.date}</p><h3>${item.company}</h3><h4>${item.role}</h4><p>${item.description}</p></div><span class="experience-arrow"><i class="arrow-mark" aria-hidden="true"></i></span></article>`).join('');
 }
 
 function renderSkills(locale) {
@@ -41,8 +41,8 @@ function renderSkills(locale) {
 
 function renderSocialLinks(strings) {
   document.querySelector('#social-links').innerHTML = `
-    <a class="social-link" href="${portfolio.github}" target="_blank" rel="noreferrer" aria-label="${strings.githubAria}">${githubIcon}<span>GitHub</span> ↗︎</a>
-    <a class="social-link" href="${portfolio.linkedin}" target="_blank" rel="noreferrer" aria-label="${strings.linkedinAria}">${linkedinIcon}<span>LinkedIn</span> ↗︎</a>`;
+    <a class="social-link" href="${portfolio.github}" target="_blank" rel="noreferrer" aria-label="${strings.githubAria}">${githubIcon}<span>GitHub</span> <i class="arrow-mark" aria-hidden="true"></i></a>
+    <a class="social-link" href="${portfolio.linkedin}" target="_blank" rel="noreferrer" aria-label="${strings.linkedinAria}">${linkedinIcon}<span>LinkedIn</span> <i class="arrow-mark" aria-hidden="true"></i></a>`;
 }
 
 function renderLanguage(nextLanguage) {
