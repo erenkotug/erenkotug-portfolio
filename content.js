@@ -1,7 +1,7 @@
 /* Portfolio metinleri ve proje bağlantıları. Kişisel içerikleri bu dosyadan güncelleyebilirsiniz. */
 window.PORTFOLIO = {
   name: "Eren Kötüğ",
-  intro: "Dokuz Eylül Üniversitesi Bilgisayar Mühendisliği mezunuyum. Ölçeklenebilir backend mimarileri, modern web arayüzleri ve yapay zekâ / bilgisayarlı görü çözümleri geliştiriyorum.",
+  intro: "Dokuz Eylül Üniversitesi Bilgisayar Mühendisliği mezunuyum. Önümüzdeki dönemde Java ile backend projeleri geliştirmeye; temiz kod, veritabanı tasarımı ve sürdürülebilir servisler konusunda deneyim kazanmaya odaklanıyorum.",
   about: "Dokuz Eylül Üniversitesi Bilgisayar Mühendisliği mezunuyum ve en çok Java ile uygulama geliştirmeye ilgi duyuyorum. Backend tarafında temiz, sürdürülebilir çözümler üretmeye odaklanırken; stajlarımda .NET Core MVC, Razor ve Cisco ağ altyapılarıyla da çalıştım. Bilgisayarlı görü ve makine öğrenmesi projeleriyle farklı alanlarda deneyim kazanıyorum.",
   email: "erenkt11@gmail.com",
   location: "Bursa / İzmir, Türkiye",

@@ -32,3 +32,80 @@ body{font-family:var(--sans);font-size:16px;font-weight:500}
 /* Alt iletişim satırını masaüstü ve mobilde okunaklı tut */
 .contact-meta{font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:0;color:#67594f}.contact-meta>div{gap:24px}.social-link{font-size:13px;font-weight:700}.social-link svg{width:17px;height:17px}.resume-footer{font-size:13px;font-weight:700}.footer{font-size:11px;font-weight:600}
 @media(max-width:680px){.contact-meta{font-size:12px;gap:15px}.contact-meta>div{gap:19px}.social-link{font-size:12px}.social-link svg{width:16px;height:16px}.resume-footer{font-size:12px}.footer{font-size:10px}}
+
+/* Tutarlı tipografi: ortak ölçek, ağırlık ve satır aralıkları */
+:root{
+  --type-body:16px;
+  --type-small:12px;
+  --type-label:11px;
+  --type-title:clamp(46px,5.6vw,68px);
+  --type-copy:15px;
+}
+body{font-family:var(--sans);font-size:var(--type-body);font-weight:400;line-height:1.65}
+.nav-links{font-family:var(--sans);font-size:13px;font-weight:600}
+.nav-availability{font-family:var(--sans);font-size:12px;font-weight:600}
+.eyebrow{font-size:var(--type-label);font-weight:700;line-height:1.5;letter-spacing:.11em}
+.hero{min-height:660px}
+.hero h1{font-size:clamp(58px,6.4vw,96px);font-weight:700;line-height:.99;letter-spacing:-.065em}
+.hero h1 em,.section-heading h2 em,.about-copy h2 em,.contact-section h2 em{font-weight:500}
+.hero-description,.project-description,.about-description,.experience-main>p:last-child,.contact-intro{font-family:var(--sans);font-size:var(--type-copy);font-weight:400;line-height:1.8}
+.hero-description{max-width:500px}
+.button{font-family:var(--sans);font-size:13px;font-weight:650}
+.resume-inline{font-size:12px;font-weight:500}
+.hero-foot,.work-bottom,.footer{font-size:11px;font-weight:500;letter-spacing:.06em}
+.architecture-card span:nth-child(2),.art-label{font-size:10px;font-weight:600}
+.architecture-card b{font-size:17px;font-weight:700}
+.section-heading h2,.about-copy h2{font-size:var(--type-title);font-weight:700;line-height:1.04;letter-spacing:-.055em}
+.section-note{font-family:var(--sans);font-size:13px;font-weight:400;line-height:1.7}
+.project-category,.project-visit,.experience-date,.experience-index,.skill-index,.about-aside-caption,.education-line small{font-size:11px;font-weight:600;letter-spacing:.06em}
+.project-info h3{font-size:clamp(20px,2vw,24px);font-weight:700;line-height:1.3;letter-spacing:-.035em}
+.project-description{font-size:14px}
+.project-tags span,.project-links{font-size:11px;font-weight:500}
+.about-description{font-size:15px}
+.experience-main h3{font-size:20px;font-weight:700}
+.experience-main h4{font-size:14px;font-weight:600}
+.education-line b{font-size:14px;font-weight:600}
+.about-copy .text-link{font-size:13px;font-weight:600}
+.skill-group h3{font-size:16px;font-weight:700}
+.skill-group>div span{font-size:11px;font-weight:500}
+.contact-section h2{font-size:clamp(56px,7.4vw,96px);font-weight:700;line-height:1;letter-spacing:-.065em}
+.contact-intro{font-size:15px}
+.contact-link{font-family:var(--sans);font-size:17px;font-weight:600}
+.contact-meta{font-size:13px;font-weight:500}
+.social-link,.resume-footer{font-size:13px;font-weight:700}
+.footer{font-size:11px}
+@media(max-width:680px){
+  :root{--type-body:16px;--type-small:13px;--type-label:10px;--type-copy:15px;--type-title:clamp(42px,10vw,56px)}
+  .nav-links{font-size:14px}
+  .eyebrow{font-size:10px}
+  .hero{padding-top:48px;padding-bottom:74px}
+  .hero h1{font-size:clamp(46px,12.5vw,68px);line-height:1.02;letter-spacing:-.06em}
+  .hero-description,.about-description,.contact-intro{font-size:15px;line-height:1.75}
+  .button{font-size:12px}
+  .resume-inline{font-size:12px}
+  .hero-foot{font-size:9px}
+  .architecture-card{height:82px;padding:12px}
+  .architecture-card span:nth-child(2){font-size:9px}
+  .architecture-card b{font-size:15px}
+  .art-label{font-size:9px}
+  .section-heading h2,.about-copy h2{font-size:var(--type-title)}
+  .section-note{font-size:13px}
+  .project-category,.project-visit{font-size:10px}
+  .project-info h3{font-size:21px}
+  .project-description{font-size:14px}
+  .project-tags span,.project-links{font-size:11px}
+  .work-bottom{font-size:9px}
+  .about-copy h2{font-size:48px}
+  .experience-index,.experience-date{font-size:10px}
+  .experience-main h3{font-size:18px}
+  .experience-main h4{font-size:13px}
+  .experience-main>p:last-child{font-size:14px}
+  .skill-index{font-size:10px}
+  .skill-group h3{font-size:14px}
+  .skill-group>div span{font-size:10px}
+  .contact-section h2{font-size:clamp(43px,11.5vw,68px)}
+  .contact-link{font-size:15px}
+  .contact-meta{font-size:11px}
+  .social-link,.resume-footer{font-size:12px}
+  .footer{font-size:9px}
+}
