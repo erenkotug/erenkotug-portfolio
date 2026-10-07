@@ -20,62 +20,65 @@
   <body>
     <div class="site-shell">
       <header class="topbar">
-        <a class="wordmark" href="#top" aria-label="Eren Kötüğ ana sayfa"><span class="wordmark-mark">EK</span><span class="wordmark-name">EREN KÖTÜĞ</span></a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç"><span></span><span></span></button>
-        <nav id="site-nav" class="nav-links" aria-label="Ana menü">
-          <a href="#work">Projeler</a><a href="#about">Hakkımda</a><a href="#experience">Deneyim</a><a href="#contact">İletişim</a>
+        <a class="wordmark" href="#top" aria-label="Eren Kötüğ ana sayfa" data-i18n-aria="homeLabel"><span class="wordmark-mark">EK</span><span class="wordmark-name">EREN KÖTÜĞ</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç" data-menu-label><span></span><span></span></button>
+        <nav id="site-nav" class="nav-links" aria-label="Ana menü" data-i18n-aria="navLabel">
+          <a href="#work" data-i18n="navWork">Projeler</a><a href="#about" data-i18n="navAbout">Hakkımda</a><a href="#experience" data-i18n="navExperience">Deneyim</a><a href="#contact" data-i18n="navContact">İletişim</a>
         </nav>
       </header>
 
       <main id="top">
         <section class="hero section-wrap">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-line"></span> MERHABA, BEN EREN KÖTÜĞ</p>
-            <h1>Web, backend<br /><span class="headline-indent">ve <em>yapay zekâ.</em></span></h1>
+            <p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="heroEyebrow">MERHABA, BEN EREN KÖTÜĞ</span></p>
+            <h1 data-i18n="heroTitle">Java ile backend<br /><span class="headline-indent">ve <em>web geliştirme.</em></span></h1>
             <p class="hero-description" data-content="intro"></p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#work">Projelerimi incele <span>↘</span></a>
-              <a class="button button-outline" href="#contact">İletişime geç <span>↗</span></a>
+              <a class="button button-primary" href="#work"><span data-i18n="workCta">Projelerimi incele</span><span>↘</span></a>
+              <a class="button button-outline" href="#contact"><span data-i18n="contactCta">İletişime geç</span><span>↗</span></a>
             </div>
-            <a class="resume-inline" data-resume-tr href="public/Eren-Kotug-CV-TR.pdf" download>Özgeçmişi indir (PDF) <span>↓</span></a>
+            <div class="hero-utility"><div class="resume-options">
+              <a class="resume-inline" data-resume-tr href="public/Eren-Kotug-CV-TR.pdf" download><span class="resume-flag" data-flag="tr"></span><span data-i18n="resumeTr">Türkçe CV indir (PDF)</span><span>↓</span></a>
+              <a class="resume-inline" data-resume-en href="public/Eren-Kotug-CV-EN.pdf" download><span class="resume-flag" data-flag="en"></span><span data-i18n="resumeEn">English CV indir (PDF)</span><span>↓</span></a>
+            </div><div class="language-controls-placeholder"></div></div>
           </div>
-          <div class="hero-art" aria-label="Backend, yapay zekâ ve web arayüzünü temsil eden katmanlı grafik" role="img">
+          <div class="hero-art" aria-label="Backend, yapay zekâ ve web arayüzünü temsil eden katmanlı grafik" data-i18n-aria="heroArt" role="img">
             <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-            <div class="architecture-card card-back"><span class="card-dot"></span><span>YAPAY ZEKÂ</span><b>CV / ML</b></div>
-            <div class="architecture-card card-mid"><span class="card-dot"></span><span>SİSTEMLER</span><b>API / VERİ</b></div>
-            <div class="architecture-card card-front"><span class="card-dot"></span><span>WEB GELİŞTİRME</span><b>WEB / ARAYÜZ</b></div>
+            <div class="architecture-card card-back"><span class="card-dot"></span><span data-i18n="artAi">YAPAY ZEKÂ</span><b>CV / ML</b></div>
+            <div class="architecture-card card-mid"><span class="card-dot"></span><span data-i18n="artSystems">SİSTEMLER</span><b>API / VERİ</b></div>
+            <div class="architecture-card card-front"><span class="card-dot"></span><span data-i18n="artWeb">WEB GELİŞTİRME</span><b>WEB / ARAYÜZ</b></div>
             <div class="art-monogram">EK<span>.</span></div>
-            <div class="art-label label-top">ÇALIŞMA<br />ALANLARIM</div>
+            <div class="art-label label-top" data-i18n="artLabel">ÇALIŞMA<br />ALANLARIM</div>
           </div>
-          <div class="hero-foot"><span>01 / 04</span><span>PROJELERİ GÖR <span class="scroll-arrow">↓</span></span><span>BURSA / İZMİR</span></div>
+          <div class="hero-foot"><span>01 / 04</span><span data-i18n="heroProjects">PROJELERİ GÖR</span><span data-i18n="heroLocation">BURSA / İZMİR</span></div>
         </section>
 
         <section id="work" class="work-section section-wrap">
-          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> PROJELER</p><h2>Seçili <em>çalışmalar.</em></h2></div><p class="section-note">Üzerinde çalıştığım projeler ve<br />kullandığım teknolojiler.</p></div>
+          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="workEyebrow">PROJELER</span></p><h2 data-i18n="workTitle">Seçili <em>çalışmalar.</em></h2></div><p class="section-note" data-i18n="workNote">Üzerinde çalıştığım projeler ve<br />kullandığım teknolojiler.</p></div>
           <div class="project-grid" id="project-grid"></div>
-          <div class="work-bottom"><span>SEÇİLMİŞ ÇALIŞMALAR</span><a href="https://github.com/erenkotug" target="_blank" rel="noreferrer">GITHUB’DA DAHA FAZLASI ↗</a><span>02 / 04</span></div>
+          <div class="work-bottom"><span data-i18n="workBottom">SEÇİLMİŞ ÇALIŞMALAR</span><a href="https://github.com/erenkotug" target="_blank" rel="noreferrer"><span data-i18n="moreGithub">GITHUB’DA DAHA FAZLASI</span> ↗</a><span>02 / 04</span></div>
         </section>
 
         <section id="about" class="about-section">
           <div class="section-wrap about-inner">
-            <div class="about-aside"><div class="portrait-frame"><img class="portrait-image" src="public/eren-kotug.png" alt="Eren Kötüğ" /></div><div class="about-stamp">DEÜ<br /><b>BİLGİSAYAR<br />MÜHENDİSLİĞİ</b><i>✳</i></div></div>
-            <div class="about-copy"><p class="eyebrow"><span class="eyebrow-line"></span> HAKKIMDA</p><h2>Kısaca<br /><em>ben.</em></h2><div class="about-description" data-content="about"></div><div class="education-line"><span class="education-icon">✳</span><div><small>EĞİTİM</small><b data-content="education"></b></div></div><a class="text-link" href="#experience">Staj deneyimlerim <span>↓</span></a></div>
+            <div class="about-aside"><div class="portrait-frame"><img class="portrait-image" src="public/eren-kotug.png" alt="Eren Kötüğ" data-i18n-alt="photoAlt" /></div><div class="about-stamp" data-i18n="aboutStamp">DEÜ<br /><b>BİLGİSAYAR<br />MÜHENDİSLİĞİ</b><i>✳</i></div></div>
+            <div class="about-copy"><p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="aboutEyebrow">HAKKIMDA</span></p><h2 data-i18n="aboutTitle">Kısaca<br /><em>ben.</em></h2><div class="about-description" data-content="about"></div><div class="education-line"><span class="education-icon">✳</span><div><small data-i18n="education">EĞİTİM</small><b data-content="education"></b></div></div><a class="text-link" href="#experience"><span data-i18n="internshipLink">Staj deneyimlerim</span> <span>↓</span></a></div>
           </div>
         </section>
 
         <section id="experience" class="experience-section section-wrap">
-          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> DENEYİM</p><h2>Staj <em>deneyimlerim.</em></h2></div><p class="section-note">Yazılım geliştirme ve ağ altyapısı.</p></div>
+          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="experienceEyebrow">DENEYİM</span></p><h2 data-i18n="experienceTitle">Staj <em>deneyimlerim.</em></h2></div><p class="section-note" data-i18n="experienceNote">Yazılım geliştirme ve ağ altyapısı.</p></div>
           <div class="experience-list" id="experience-list"></div>
         </section>
 
         <section id="skills" class="skills-section section-wrap">
-          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> TEKNİK YETKİNLİKLER</p><h2>Kullandığım<br /><em>teknolojiler.</em></h2></div><p class="section-note">Programlama, web, yapay zekâ<br />ve altyapı araçları.</p></div>
+          <div class="section-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="skillsEyebrow">TEKNİK YETKİNLİKLER</span></p><h2 data-i18n="skillsTitle">Kullandığım<br /><em>teknolojiler.</em></h2></div><p class="section-note" data-i18n="skillsNote">Programlama, web, yapay zekâ<br />ve altyapı araçları.</p></div>
           <div class="skills-grid" id="skills-grid"></div>
         </section>
 
-        <section id="contact" class="contact-section section-wrap"><p class="eyebrow"><span class="eyebrow-line"></span> YENİ PROJELERDE BİRLİKTE ÇALIŞALIM</p><h2>İyi bir fikri<br /><em>hayata geçirelim.</em></h2><p class="contact-intro">Yeni mezun mühendislik fırsatları, iş birlikleri veya projeler hakkında görüşmek için bana ulaşabilirsiniz.</p><a class="contact-link" data-email-link href="mailto:erenkt11@gmail.com"><span data-email></span><span class="contact-arrow">↗</span></a><div class="contact-meta"><span data-location></span><div id="social-links"></div><a class="resume-footer" data-resume-en href="public/Eren-Kotug-CV-EN.pdf" download>İngilizce CV ↓</a></div></section>
+        <section id="contact" class="contact-section section-wrap"><p class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="contactEyebrow">YENİ PROJELERDE BİRLİKTE ÇALIŞALIM</span></p><h2 data-i18n="contactTitle">İyi bir fikri<br /><em>hayata geçirelim.</em></h2><p class="contact-intro" data-i18n="contactIntro">Yeni mezun mühendislik fırsatları, iş birlikleri veya projeler hakkında görüşmek için bana ulaşabilirsiniz.</p><a class="contact-link" data-email-link href="mailto:erenkt11@gmail.com"><span data-email></span><span class="contact-arrow">↗</span></a><div class="contact-meta"><span data-location></span><div id="social-links"></div></div></section>
       </main>
-      <footer class="footer section-wrap"><a class="footer-mark" href="#top">EK<span>.</span></a><span>© <span id="year"></span> EREN KÖTÜĞ</span><a href="#top">YUKARI ÇIK ↑</a></footer>
+      <footer class="footer section-wrap"><a class="footer-mark" href="#top">EK<span>.</span></a><span>© <span id="year"></span> <span data-i18n="footerName">EREN KÖTÜĞ</span></span><a href="#top"><span data-i18n="footerTop">YUKARI ÇIK</span> ↑</a></footer>
     </div>
   </body>
 </html>
